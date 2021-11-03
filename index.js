@@ -99,12 +99,6 @@ class TreeView extends React.Component {
         <View
           key={node[this.props.idKey]}
           style={{
-            height: isExpanded
-              ? 'auto'
-              : this.props.getCollapsedNodeHeight({
-                  [this.props.idKey]: node[this.props.idKey],
-                  level,
-                }),
             zIndex: 1,
             overflow: 'hidden',
           }}
