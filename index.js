@@ -10,7 +10,6 @@ class TreeView extends React.Component {
     data: PropTypes.array.isRequired,
     renderNode: PropTypes.func.isRequired,
     initialExpanded: PropTypes.bool,
-    getCollapsedNodeHeight: PropTypes.func,
     idKey: PropTypes.string,
     activeOpacityNode: PropTypes.number,
     childrenKey: PropTypes.string,
@@ -22,7 +21,6 @@ class TreeView extends React.Component {
 
   static defaultProps = {
     initialExpanded: false,
-    getCollapsedNodeHeight: () => 20,
     idKey: 'id',
     childrenKey: 'children',
     activeOpacityNode: .2,
